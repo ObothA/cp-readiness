@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+
+	<title> Search</title>
+	<meta charset="utf-8">
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container ">
+	<div class="row">
+		<div class="col-lg-3"></div>
+
+		<div class="col-lg-6 col-centered text-center" style="padding-top: 150px">
+			
+
+			<h1 style="color:#999">The Oboth Search</h1>
+			
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="enter search term" id="search_bar">
+
+					<div style="padding-top:25px ">
+					<button type="submit" onclick="jsFunction()" >search</button>
+					</div>
+
+				</div>
+			</form>
+
+
+		</div>
+
+
+		<div class="col-lg-3"></div>
+
+	</div>
+</div>
+
+
+<script>
+	function jsFunction(){
+		var searchTerm = document.getElementById("search_bar").value;
+		if(searchTerm != ''){
+			alert("this is your search term \n" + "\t" +searchTerm);
+		}else
+		alert("please enter something in the search bar below");
+	}
+</script>
+</body>
+
+</html>
